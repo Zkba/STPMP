@@ -19,7 +19,7 @@ class Options:
         # self.parser.add_argument('--data_dir_3dpw', type=str, default='***/sequenceFiles/', help='path to 3DPW dataset')#
         # self.parser.add_argument('--data_dir_cmu', type=str, default='***/', help='path to CMU dataset')
         self.parser.add_argument('--data_dir', type=str, default='/data00/jiexin_wang/datasets/human3.6/h3.6m/dataset', help='path to H36M dataset')
-        self.parser.add_argument('--data_dir_3dpw', type=str, default='/data00/jiexin_wang/datasets/3DPW/sequenceFiles/', help='path to 3DPW dataset')#
+        self.parser.add_argument('--data_dir_3dpw', type=str, default='/content/drive/MyDrive/3dpwDataset/sequenceFiles', help='path to 3DPW dataset')#
         self.parser.add_argument('--data_dir_cmu', type=str, default='/data00/jiexin_wang/datasets/CMUMocap/', help='path to CMU dataset')
         self.parser.add_argument('--exp', type=str, default='test', help='ID of experiment')
         self.parser.add_argument('--ckpt', type=str, default='checkpoint/', help='path to save checkpoint')
