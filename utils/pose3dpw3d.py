@@ -56,7 +56,8 @@ class Pose3dPW3D(Dataset):
                 data = pkl.load(f, encoding='latin1')
                 joint_pos = data['jointPositions']
                 for i in range(len(joint_pos)):
-                    seqs = joint_pos[i]
+                    # seqs = joint_pos[i]
+                    seqs = np.array(joint_pos[i])/10000    # 若保存数据集时为list，则需要先转换为numpy array
                     seqs = seqs - seqs[:, 0:3].repeat(24, axis=0).reshape(-1, 72)
                     n_frames = seqs.shape[0]
                     fs = np.arange(0, n_frames - seq_len + 1)
